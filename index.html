@@ -4,121 +4,141 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/c8d7f3000a.js" crossorigin="anonymous"></script>
     <title>Bio Køkken</title>
   </head>
-  <body>
+  <body class="body__frontpage">
     <header class="header">
-      <img class="header__logo" src="#" alt="BioKøkkenet Logo" />
-      <h1 class="header__title">NATURENS EGET DESIGN</h1>
-      <ul class="header__menu">
-        <li class="btn btn__search">S</li>
-        <li class="btn btn__basket">B</li>
-        <li class="btn btn__menu">M</li>
-      </ul>
+      <div class="header__con">
+        <img class="header__logo" src="img/logo_header.svg" alt="BioKøkkenet Logo" />
+        <h1 class="header__title">NATURENS EGET DESIGN</h1>
+        <ul class="header__menu">
+          <li class="btn btn__search"><i class="menu__icon fas fa-search"></i></li>
+          <li class="btn btn__basket"><i class="menu__icon fas fa-shopping-cart"></i></li>
+          <li class="btn btn__menu"><i class="menu__icon fas fa-bars"></i></li>
+        </ul>
+      </div>
     </header>
     <main class="main__frontpage">
-      <section class="main_item __skaerebraet">
-        <divs class="skaerebraet__content">
-            <h3 class="skaerebraet__price price--medium">499,-</h3>
-            <h3 class="skaerebraet__title title--medium">Skærebræt</h3>
-            <p class="skaerebraet__description">Dette skærebræt fra BioKøkkenet er udarbejder i dansk birk og er bæredygtigt og FSC-mærket. Brættet er af hårdfør kvalitet, hvilket gør at det kan udstå alle slags knive. Derudover er skærebrættet designet med et håndtag, der gør at brættet også kan benyttes som serveringsbræt. Vores skærebræt har en holdbarhedsgaranti på hele 10 år.</p>
+      <section class="main__item __skaerebraet">
+        <div class="skaerebraet__content">
+          <h3 class="skaerebraet__price price--medium">499,-</h3>
+          <h3 class="skaerebraet__title title--medium">Skærebræt</h3>
+          <p class="skaerebraet__description">
+            Dette skærebræt fra BioKøkkenet er udarbejder i dansk birk og er bæredygtigt og
+            FSC-mærket. Brættet er af hårdfør kvalitet, hvilket gør at det kan udstå alle slags
+            knive. Derudover er skærebrættet designet med et håndtag, der gør at brættet også kan
+            benyttes som serveringsbræt. Vores skærebræt har en holdbarhedsgaranti på hele 10 år.
+          </p>
+          <p class="skaerebraet__button">SE MERE</p>
         </div>
         <div class="skaerebraet__image__con">
-            <img class="product__image" src="#" alt="Skærebræt">
+          <img class="product__image" src="img/Skærebræt.png" alt="Skærebræt" />
         </div>
       </section>
 
-      <section class="main__item __storskaal">
+      <div class="grid_con_col_3">
+        <section class="main__item __storskaal">
           <div class="storskaal__image__con">
-            <img class="storskaal__image" src="#" alt="storskål">
-        </div>
-        <div class="storskaal__content">
+            <img class="storskaal__image" src="img/stor_skål.png" alt="storskål" />
+          </div>
+          <div class="storskaal__content">
             <h3 class="storskaal__price price--big">899,-</h3>
             <h3 class="storskaal__title title--big">Stor skål</h3>
-        </div>
-      </section>
-
-      <section class="main__item __koekkenrulle">
-        <div class="koekkenrulle__content">
+          </div>
+        </section>
+        <section class="main__item __koekkenrulle">
+          <div class="koekkenrulle__content">
             <h3 class="koekkenrulle__price price--small">1499,-</h3>
             <h3 class="koekkenrulle__title title--small">Køkkenrulle-</h3>
             <h3 class="koekkenrulle__title title--small">holder</h3>
-        </div>
-        <div class="koekkenrulle__image__con">
-            <img class="product__image" src="#" alt="køkkenrulle holder"></div>
-      </section>
-
-      <section class="main__item __lilleskaal">
-        <div class="lilleskaal__image__con">
-            <img class="product__image" src="#" alt="Lille skål">
-        </div>
-        <div class="lilleskaal__content">
+          </div>
+          <div class="koekkenrulle__image__con">
+            <img class="product__image" src="img/køkkenrulle-cut.png" alt="køkkenrulle holder" />
+          </div>
+        </section>
+        <section class="main__item __lilleskaal">
+          <div class="lilleskaal__image__con">
+            <img class="product__image" src="img/lilleskaal.png" alt="Lille skål" />
+          </div>
+          <div class="lilleskaal__content">
             <h3 class="lilleskaal__price price--small">699,-</h3>
             <h3 class="lilleskaal__title title--small">Lille skål</h3>
-        </div>
-      </section>
-
-      <section class="main__item __traeske">
-        <div class="traeske__image__con">
-            <img class="product__image" src="#" alt="Træske">
-        </div>
-        <div class="traeske__content">
+          </div>
+        </section>
+        <section class="main__item __traeske">
+          <div class="traeske__image__con">
+            <img class="product__image" src="img/traeske.png" alt="Træske" />
+          </div>
+          <div class="traeske__content">
             <h3 class="traeske__price price--small">1299,-</h3>
             <h3 class="traeske__title title--small">Træske</h3>
-        </div>
-      </section>
-
-      <section class="main__item __maaleske">
-        <div class="maaleske__content">
+          </div>
+        </section>
+        <section class="main__item __maaleske">
+          <div class="maaleske__content">
             <h3 class="maaleske__price price--small">2199,-</h3>
             <h3 class="maaleske__title title--small">Måleske</h3>
-        </div>
-        <div class="maaleske__image__con">
-            <img class="product__image" src="#" alt="Måleske">
-        </div>
-      </section>
-
-      <section class="main__item __piskeris">
-        <div class="piskeris__content">
+          </div>
+          <div class="maaleske__image__con">
+            <img class="product__image" src="img/maaleske.png" alt="Måleske" />
+          </div>
+        </section>
+        <section class="main__item __piskeris">
+          <div class="piskeris__content">
             <h3 class="piskeris__price price--small">5399,-</h3>
             <h3 class="piskeris__title title--small">Piskeris</h3>
-        </div>
-        <div class="piskeris__image__con">
-            <img class="product__image" src="#" alt="Piskeris">
-        </div>
-      </section>
-
-      <section class="main__item __pallette">
-        <div class="pallette__content">
+          </div>
+          <div class="piskeris__image__con">
+            <img class="product__image" src="img/piskeris.png" alt="Piskeris" />
+          </div>
+        </section>
+        <section class="main__item __pallette">
+          <div class="pallette__content">
             <h3 class="pallette__price price--small">29,-</h3>
             <h3 class="pallette__title title--small">Pallette</h3>
-        </div>
-        <div class="pallette__image__con">
-            <img class="product__image" src="#" alt="Pallette">
-        </div>
-      </section>
+          </div>
+          <div class="pallette__image__con">
+            <img class="product__image" src="img/pallette.png" alt="Pallette" />
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <section class="footer__item __newsletter">
-        <h4 class="newsletter__title">ABONNER PÅ VORES NYHEDSBREV</h4>
-        <p class="newsletter__text">Nyhedsbrevet fra BioKøkkenet giver dig en masse eksklusive deals, ugentlige trendnyheder samt personlige anbefalinger.</p>
+        <h4 class="newsletter__title">
+          ABONNER PÅ VORES <span class="underline">NYHEDSBREV</span>
+        </h4>
+        <p class="newsletter__text">
+          Nyhedsbrevet fra BioKøkkenet giver dig en masse eksklusive deals, ugentlige trendnyheder
+          samt personlige anbefalinger.
+        </p>
         <p class="newsletter__email">Skriv din email her</p>
-        <hr class="newsletter__ruler">
+        <hr class="newsletter__ruler" />
       </section>
 
       <section class="footer__item __contact">
         <h2 class="contact__title">KONTAKT OS</h2>
-        <p class="contact__address">Kundeservice - Amagerbrogade 22, 2300 Kbh S </p>
+        <p class="contact__address">Kundeservice - Amagerbrogade 22, 2300 Kbh S</p>
         <div class="contact__info__con">
-            <div class="contact__info__number__con">
-                <img class="contact__icon" src="#" alt="Telefon">
-                <p class="contact__info__number">+45 12 34 56 78 </p>
-            </div>
+          <div class="contact__info__number__con">
+            <img class="contact__icon" src="img/icons/phone_24px.png" alt="Telefon" />
+            <p class="contact__info__number__text">Tlf:</p>
+            <p class="contact__info__number">+45 12 34 56 78</p>
+          </div>
 
-            <div class="contact__info__email__con">
-                <img class="contact icon" src="#" alt="email">
-                <a class="contact__email" href = "Anne@Biokøkken.dk">Anne@Biokøkken.dk</a>
-            </div>
+          <div class="contact__info__email__con">
+            <img class="contact icon" src="img/icons/mail_outline_24px.png" alt="email" />
+            <p class="contact__info_email__text">Email:</p>
+            <a class="contact__info__email" href="Anne@Biokøkken.dk">Anne@Biokøkken.dk</a>
+          </div>
+
+          <div class="contact__info__fax__con">
+            <img class="contact__icon" src="img/icons/present_to_all_24px.png" alt="Fax" />
+            <p class="contact__info__fax__text">Fax:</p>
+            <p class="contact__info__fax__number">+1 323 555 1234</p>
+          </div>
         </div>
       </section>
     </footer>

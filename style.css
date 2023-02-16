@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Nunito:wght@400;600&family=Overlock+SC&family=Patrick+Hand&family=Roboto:wght@400;500&display=swap');
+
+/* 
+font-family: 'Nunito', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Overlock SC', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body__frontpage {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header__con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 0 2%;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 30px;
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__menu {
+  display: flex;
+  gap: 1.5em;
+}
+
+.btn {
+  list-style: none;
+}
+
+/* Main */
+
+.price--small,
+.price--medium,
+.price--big {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.price--small {
+  font-size: 40px;
+}
+.price--medium {
+  font-size: 45px;
+}
+.price--big {
+  font-size: 50px;
+}
+
+.title--small,
+.title--medium,
+.title--big {
+  font-family: 'Overlock SC', cursive;
+  font-weight: 300;
+}
+
+.title--small {
+  font-size: 40px;
+}
+.title--medium {
+  font-size: 50px;
+}
+.title--big {
+  font-size: 55px;
+}
+
+.main__item,
+.footer__item {
+  background-color: #f0f0f0;
+  display: flex;
+}
+
+/* Grid container layout */
+
+.grid_con_col_3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'storskaal storskaal koekkenrulle'
+    'storskaal storskaal lilleskaal'
+    'traeske maaleske maaleske'
+    'piskeris piskeris pallette';
+  gap: 1%;
+}
+
+/* Skærebræt */
+
+.__skaerebraet {
+  justify-content: center;
+  align-items: center;
+  padding: 5em 7% 3em 7%;
+  margin-bottom: 1em;
+  grid-area: skaerebraet;
+}
+
+.skaerebraet__content {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.skaerebraet__description,
+.skaerebraet__button {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+}
+
+.skaerebraet__price {
+  position: relative;
+  left: 4%;
+}
+
+.skaerebraet__button {
+  font-size: 20px;
+  border: solid black 2px;
+  padding: 1% 2%;
+  margin-top: 0.7em;
+}
+
+/* Stor skål */
+
+.__storskaal {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-area: storskaal;
+  padding-top: 18em;
+}
+
+.storskaal__content {
+  margin-top: 5em;
+}
+
+/* Køkkenrulle */
+
+.__koekkenrulle {
+  align-items: center;
+  height: 453px;
+  grid-area: koekkenrulle;
+}
+
+.koekkenrulle__content {
+  position: relative;
+  left: 10%;
+}
+
+/* Lille skål */
+
+.__lilleskaal {
+  height: 453px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10em;
+  grid-area: lilleskaal;
+}
+
+.lilleskaal__image__con {
+  position: relative;
+  right: 12%;
+}
+
+.lilleskaal__content {
+  padding-top: 2em;
+  text-align: center;
+}
+/* Træske */
+
+.__traeske {
+  height: 453px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: traeske;
+}
+
+/* Måleske */
+
+.__maaleske {
+  height: 453px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  grid-area: maaleske;
+}
+
+.maaleske__content {
+  position: relative;
+  left: 15%;
+}
+
+.maaleske__image__con {
+  position: relative;
+  left: 10%;
+  bottom: 2em;
+}
+
+/* Piskeris */
+
+.__piskeris {
+  height: 453px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-area: piskeris;
+}
+
+.piskeris__content {
+  position: relative;
+  top: 20%;
+}
+
+.piskeris__image__con {
+  padding-bottom: 3em;
+}
+
+/* Pallette */
+
+.__pallette {
+  height: 453px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  text-align: center;
+  gap: 4em;
+  padding-right: 5em;
+  grid-area: pallette;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  margin: 5% 0 1% 0;
+  gap: 1%;
+}
+
+/* Newsletter */
+
+.__newsletter {
+  flex-direction: column;
+  gap: 2em;
+  padding: 5%;
+  height: 453px;
+  width: 457px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  text-align: center;
+  flex: 1;
+}
+
+.newsletter__title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.underline {
+  text-decoration: underline 1.5px;
+}
+
+.newsletter__email {
+  opacity: 0.5;
+}
+
+/* Contact */
+
+.__contact {
+  font-family: 'Nunito Sans', sans-serif;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  padding-left: 10%;
+  flex: 2.5;
+}
+
+.contact__info__number__con,
+.contact__info__email__con,
+.contact__info__fax__con {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  gap: 1em;
+}
+
+.contact__info__con {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact__title {
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.contact__address {
+  font-size: 25px;
+}
+
+.contact__info__number__text {
+  padding-left: 4px;
+}
+
+.contact__info__number {
+  padding-left: 4%;
+}
+
+.contact__info__fax__number {
+  padding-left: 2.6%;
+}
