@@ -325,3 +325,8 @@ font-family: 'Roboto', sans-serif;
 .contact__info__fax__number {
   padding-left: 2.6%;
 }
+
+.contact__icon {
+  width: 32px;
+  height: 32px;
+}
