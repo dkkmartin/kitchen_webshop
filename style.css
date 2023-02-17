@@ -290,19 +290,19 @@ font-family: 'Roboto', sans-serif;
   flex: 2.5;
 }
 
-.contact__info__number__con,
-.contact__info__email__con,
-.contact__info__fax__con {
+.contact__info__icon__con,
+.contact__info__text__con,
+.contact__info__details__con {
   display: flex;
+  flex-direction: column;
+  justify-content: baseline;
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
-  gap: 1em;
 }
 
 .contact__info__con {
   display: flex;
-  flex-direction: column;
-  gap: 1em;
+  gap: 2em;
 }
 
 .contact__title {
@@ -314,19 +314,6 @@ font-family: 'Roboto', sans-serif;
   font-size: 25px;
 }
 
-.contact__info__number__text {
-  padding-left: 4px;
-}
+/*** Index end ***/
 
-.contact__info__number {
-  padding-left: 4%;
-}
-
-.contact__info__fax__number {
-  padding-left: 2.6%;
-}
-
-.contact__icon {
-  width: 32px;
-  height: 32px;
-}
+/* Betalingsside */
