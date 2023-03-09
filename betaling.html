@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/c8d7f3000a.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/c8d7f3000a.js" crossorigin="anonymous"></script> -->
     <title>Bio køkken</title>
   </head>
-  <body>
+  <body class="body__betaling">
     <header class="header __betaling">
       <div class="header__con">
         <img class="header__logo" src="img/logo_header.svg" alt="BioKøkkenet Logo" />
@@ -21,68 +21,196 @@
       </div>
     </header>
     <main class="main __betalingssite">
-      <section class="main__item item__payment">
-        <div class="payment__title__con">
-          <img class="payment__icon" src="img/group_1.png" alt="Number one" />
-          <h3 class="payment__title">Din indkøbskurv</h3>
-        </div>
-        <div class="payment__content__con">
-          <img src="img/skaerebraet_vertical.png" alt="Skærebræt" />
-          <div class="payment__content__text__con">
-            <h3 class="payment__content__title">Skærebræt</h3>
-            <p class="payment__content__text">Godt skærebræt i</p>
-            <p class="payment__content__text">usædvanlig kvalitet</p>
+      <aside class="aside__betaling">
+        <fieldset class="main__item item--white item__basket"></fieldset>
+        <fieldset class="main__item item--white item__giftcard"></fieldset>
+      </aside>
+
+      <section class="section__betaling__left">
+        <section class="main__item item--white item__payment">
+          <div class="payment__title__con">
+            <img class="payment__icon" src="img/group_1.png" alt="Number one" />
+            <h2 class="payment__title text--big">Din indkøbskurv</h2>
           </div>
-
-          <div class="payment__content__details__con">
-            <p class="payment__content__details__text text--small">Antal: 1</p>
-            <p class="payment__content__details__text text--big">Levering</p>
-            <p class="payment__content__details__text text--big">
-              Pris i alt <span class="text--faded">(inkl. moms)</span>
-            </p>
-          </div>
-
-          <div class="payment__content__price__con">
-            <p class="payment__content__price__text text--big">Gratis</p>
-            <h3 class="payment__content__price">499,00 KR</h3>
-          </div>
-        </div>
-      </section>
-
-      <section class="main__item item__payment__options">
-        <form class="payment__form">
-          <fieldset class="fieldset__card">
-            <div class="options__title__con">
-              <img class="options__icon" src="img/group_2.png" alt="Number two" />
-              <h3 class="options__title">Vælg betalingsmuligheder</h3>
-            </div>
-
-            <div>
-              <div class="options__content__con">
-                <input type="radio" name="dankort" />
-                <img src="img/credit_card.png" alt="Credit card" />
-                <label class="label --medium20" for="dankort">Dankort/Kreditkort</label>
+          <div class="payment__content__con">
+            <img
+              class="payment__content__image1"
+              src="img/skaerebraet_vertical.png"
+              alt="Skærebræt"
+            />
+            <div class="content__con">
+              <div class="payment__content__text__con">
+                <h3 class="payment__content__title text--big">Skærebræt</h3>
+                <p class="payment__content__text">Godt skærebræt i</p>
+                <p class="payment__content__text">usædvanlig kvalitet</p>
               </div>
-              <p>
-                Ved bestilling reserveres beløbet på dit kort, men pengene vil ikke blive trukket
-                før vi har afsendt din ordre. Ingen ekstra gebyrer vil blive lagt til. Vi accepterer
-                disse kreditkort: Visa, Mastercard, Dankort, Eurocard, Diners Card & American
-                Express.
-              </p>
+              <div class="payment__content__details__con">
+                <p class="payment__content__details__text text--small">Antal: 1</p>
+                <p class="payment__content__details__text text--25px --semibold">Levering</p>
+                <p class="payment__content__details__text text--25px --semibold">
+                  Pris i alt <span class="--faded text--22px">(inkl. moms)</span>
+                </p>
+              </div>
             </div>
-          </fieldset>
-        </form>
+            <div class="payment__content__price__con">
+              <p class="payment__content__price__text text--25px">Gratis</p>
+              <h3 class="payment__content__price text--big --bold">499,00 KR</h3>
+            </div>
+          </div>
+        </section>
+        <section class="main__item item--white item__payment__card">
+          <form id="form__card" class="payment__form">
+            <fieldset class="fieldset__card">
+              <div class="options__title__con">
+                <img class="options__icon" src="img/group_2.png" alt="Number two" />
+                <h2 class="options__title">Vælg betalingsmuligheder</h2>
+              </div>
+              <div class="options__card__con">
+                <div class="options__dankort__con">
+                  <input type="radio" name="dankort" id="dankort" />
+                  <img class="payment__icon" src="img/credit_card.png" alt="Credit card" />
+                  <label class="label --bold text--small" for="dankort">Dankort/Kreditkort</label>
+                </div>
+                <p class="text--14px --faded">
+                  Ved bestilling reserveres beløbet på dit kort, men pengene vil ikke blive trukket
+                  før vi har afsendt din ordre. Ingen ekstra gebyrer vil blive lagt til. Vi
+                  accepterer disse kreditkort: Visa, Mastercard, Dankort, Eurocard, Diners Card &
+                  American Express.
+                </p>
+              </div>
+              <div class="options__mobilepay__con">
+                <input type="radio" name="mobilepay" id="mobilepay" />
+                <img class="payment__icon" src="img/mobilepay.png" alt="mobilepay" />
+                <label for="mobilepay">MobilePay</label>
+              </div>
+              <div class="options__paypal__con">
+                <input type="radio" name="paypal" id="paypal" />
+                <img src="img/paypal.png" alt="paypal" />
+                <label for="paypal">PayPal</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset__card">
+              <div class="options__title__con">
+                <img class="options__icon" src="img/group_3.png" alt="Number three" />
+                <h2 class="options__title">Faktureringsoplysninger</h2>
+              </div>
+              <div class="col__group">
+                <div class="col__2">
+                  <div class="col__item">
+                    <label for="first__name">Fornavn</label>
+                    <input type="text" id="first__name" placeholder="Jan" />
+                  </div>
+                  <div class="col__item">
+                    <label for="last__name">Efternavn</label>
+                    <input type="text" name="last__name" id="last__name" placeholder="Hansen" />
+                  </div>
+                  <div class="col__item">
+                    <label for="street">Vej/gade husnummer</label>
+                    <input type="text" name="street" id="street" placeholder="Hajmestervej 69" />
+                  </div>
+                  <div class="col__item">
+                    <label for="zipcode">Postnummer</label>
+                    <input type="text" name="zipcode" id="zipcode" placeholder="1600" />
+                  </div>
+                  <div class="col__item">
+                    <label for="city">By</label>
+                    <input type="text" name="city" id="city" placeholder="København K" />
+                  </div>
+                  <p class="--required">* Obligatorisk felt</p>
+                </div>
+                <div class="col__2">
+                  <div class="col__item">
+                    <label for="country">Land</label>
+                    <input type="text" name="country" id="country" placeholder="Danmark" />
+                  </div>
+                  <div class="col__item">
+                    <label for="phone__number">Mobil nr.</label>
+                    <input
+                      type="number"
+                      name="phone__number"
+                      id="phone__number"
+                      placeholder="+4540506070"
+                    />
+                  </div>
+                  <div class="col__item">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="janmanden@email.dk" />
+                  </div>
+                  <div class="col__item">
+                    <label for="controle__email">Kontroller e-mail</label>
+                    <input
+                      type="email"
+                      name="controle__email"
+                      id="controle__email"
+                      placeholder="janmanden@email.dk"
+                    />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="fieldset__card">
+              <div class="options__title__con">
+                <img class="options__icon" src="img/group_4.png" alt="Number four" />
+                <h2 class="options__title">Leveringsinformation</h2>
+              </div>
+              <div class="delivery__pakkeshop__con">
+                <div class="delivery__pakkeshop">
+                  <input type="radio" name="pakkeshop" id="pakkeshop" />
+                  <img src="img/gls.png" alt="GLS" />
+                  <label for="pakkeshop --bold">Valgfri pakkeshop</label>
+                  <p class="delivery__para --bold --faded">1-2 hverdage</p>
+                  <p class="delivery__para --bold --faded">INTET GEBYR</p>
+                </div>
+                <p class="pakkeshop__subtext text--14px --faded">
+                  Gratis levering på alle ordrer over 499 kr. Leveres til en valgfri pakkeshop
+                  (kiosk, tankstation eller lign.). Bestem selv hvornår det passer dig at hente
+                  pakken.
+                </p>
+              </div>
+              <div class="delivery__workadress__con">
+                <input type="radio" name="arbejdsadresse" id="arbejdsadresse" />
+                <img src="img/gls.png" alt="GLS" />
+                <label for="arbejdsadresse">Arbejdsadresse</label>
+                <p class="delivery__para --bold --faded">1-2 hverdage</p>
+                <p class="delivery__para --bold --faded">INTET GEBYR</p>
+              </div>
+              <div class="delivery__homeadress__con">
+                <input type="radio" name="homeadress" id="homeadress" />
+                <img src="img/gls.png" alt="GLS" />
+                <label for="homeadress">Hjemmelevering</label>
+                <p class="delivery__para --bold --faded">Mandag-fredag 8-17</p>
+                <p class="delivery__para --bold --faded">39 kr</p>
+              </div>
+            </fieldset>
+            <fieldset class="fieldset__card">
+              <div class="options__title__con">
+                <img class="options__icon" src="img/group_5.png" alt="Number five" />
+                <h2 class="options__title">Bekræft betaling</h2>
+              </div>
+              <div class="confirm__checkbox">
+                <input type="checkbox" name="agreement" id="agreement" />
+                <label for="agreement" class="text--14px --bold">
+                  * Når du bestiller, godkender du den gældende fortrydelsesret, vores cookies og
+                  fortrolighedspolitik samt vores salgs- og leveringsbetingelser samt accepterer at
+                  bestillingen først er juridisk bindende, når vi har bekræftet din ordre.
+                </label>
+              </div>
+              <div class="confirm__warning">
+                <i class="fa-solid fa-exclamation"></i>
+                <p class="warning__para text--14px --bold">
+                  Din bestilling er først juridisk bindende, når vi har bekræftet din ordre i en
+                  email. Boozt.com har derfor mulighed for at annullere din ordre som følge af
+                  trykfejl, tekniske problemer, leveringssvigt og lignende situationer.
+                </p>
+              </div>
+              <button class="form__submit --bold text--25px" type="submit">
+                GÅ TIL SIKKER BETALING
+              </button>
+            </fieldset>
+          </form>
+        </section>
       </section>
-
-      <section class="main__item item__shipping"></section>
-
-      <section class="main__item item__shipping__details"></section>
-
-      <section class="main__item item__confirm"></section>
-
-      <section class="main__item item__basket"></section>
-
-      <section class="main__item item__giftcard"></section>
     </main>
     <footer></footer>
   </body>
