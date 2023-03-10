@@ -354,6 +354,11 @@ font-family: 'Roboto', sans-serif;
 
 /* Betalingsside */
 
+.__betalingssite {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
 /* PICKED ITEM */
 .section__betaling__left {
   max-width: 820px;
@@ -368,13 +373,11 @@ font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
 
-.item--white {
-  background-color: #fff;
-  padding: 5%;
-}
-
 .item__payment {
   flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 2em;
+  padding: 2em 5%;
 }
 
 .payment__title__con,
@@ -427,6 +430,8 @@ font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   gap: 1em;
+  background-color: #fff;
+  padding: 2em 5%;
 }
 
 .item__payment__card {
@@ -437,6 +442,8 @@ font-family: 'Roboto', sans-serif;
 .payment__form {
   display: flex;
   flex-direction: column;
+  gap: 2em;
+  margin-bottom: 2em;
 }
 
 .fieldset__card > div {
@@ -489,7 +496,9 @@ font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
 }
-.col__item input {
+.col__item input,
+#rabat,
+#giftcard {
   height: 3vh;
   border: 1px solid #000;
   font-family: 'Nunito', sans-serif;
@@ -542,4 +551,83 @@ font-family: 'Roboto', sans-serif;
   background-color: #42c669;
   border: none;
   height: 5vh;
+}
+
+.fa-exclamation {
+  border: 2px solid #b2b2bb;
+  padding: 1% 2%;
+  border-radius: 1px;
+}
+
+/*** ASIDE ***/
+
+.aside__basket,
+.aside__giftcard {
+  background-color: #fff;
+  max-width: 455px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.aside__basket__border {
+  border-bottom: 1px solid #000;
+}
+
+.aside__basket__title {
+  padding: 10%;
+}
+
+.aside__basket__con {
+  border-bottom: 1px solid #000;
+}
+
+.basket__con {
+  padding: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2em;
+}
+
+.basket__con__item:nth-child(even) {
+  justify-self: end;
+}
+
+.aside__basket__con__total {
+  padding: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside__giftcard {
+  padding-top: 10%;
+}
+
+.aside__rabat__con {
+  padding: 10%;
+  border-bottom: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.aside__giftcard__con {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.aside__use__con {
+  display: flex;
+}
+
+.aside__use__btn {
+  height: 3vh;
+  border: 1px solid #000;
+  border-left: none;
+  background-color: #4d4d4d;
+  color: #fff;
+  font-family: inherit;
+  padding: 0 1em;
 }

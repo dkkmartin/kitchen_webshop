@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <!-- <script src="https://kit.fontawesome.com/c8d7f3000a.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/c8d7f3000a.js" crossorigin="anonymous"></script>
     <title>Bio køkken</title>
   </head>
   <body class="body__betaling">
@@ -21,11 +21,6 @@
       </div>
     </header>
     <main class="main __betalingssite">
-      <aside class="aside__betaling">
-        <fieldset class="main__item item--white item__basket"></fieldset>
-        <fieldset class="main__item item--white item__giftcard"></fieldset>
-      </aside>
-
       <section class="section__betaling__left">
         <section class="main__item item--white item__payment">
           <div class="payment__title__con">
@@ -211,6 +206,44 @@
           </form>
         </section>
       </section>
+      <aside class="aside__betaling">
+        <section class="main__item item--white aside__basket">
+          <div class="aside__basket__border">
+            <h1 class="aside__basket__title --bold text--big">Din indkøbskurv</h1>
+          </div>
+          <div class="aside__basket__con">
+            <div class="basket__con">
+              <p class="basket__con__item">Total før rabat</p>
+              <p class="basket__con__item">499 kr,-</p>
+              <p class="basket__con__item">Fragt</p>
+              <p class="basket__con__item">0 kr,-</p>
+            </div>
+          </div>
+          <div class="aside__basket__con__total">
+            <h2 class="--bold text--25px">Total pris:</h2>
+            <div>
+              <p class="--bold text--25px">499,00 kr,-</p>
+              <p class="--faded">inkl. moms</p>
+            </div>
+          </div>
+        </section>
+        <section class="main__item item--white aside__giftcard">
+          <div class="aside__rabat__con">
+            <label class="text--25px --bold" for="rabat">Rabatkode</label>
+            <div class="aside__use__con">
+              <input id="rabat" type="text" />
+              <button class="aside__use__btn">ANVEND</button>
+            </div>
+          </div>
+          <div class="aside__giftcard__con">
+            <label class="text--25px --bold" for="giftcard">Gavekort/Tilgodebevis</label>
+            <div class="aside__use__con">
+              <input id="giftcard" type="text" />
+              <button class="aside__use__btn">ANVEND</button>
+            </div>
+          </div>
+        </section>
+      </aside>
     </main>
     <footer></footer>
   </body>
