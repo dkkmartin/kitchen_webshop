@@ -559,6 +559,11 @@ font-family: 'Roboto', sans-serif;
   border-radius: 1px;
 }
 
+.confirm__checkbox__con {
+  display: grid !important;
+  grid-template-columns: 1fr 6fr;
+}
+
 /*** ASIDE ***/
 
 .aside__basket,
