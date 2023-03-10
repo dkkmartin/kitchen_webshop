@@ -166,6 +166,8 @@ font-family: 'Roboto', sans-serif;
   border: solid black 2px;
   padding: 1% 2%;
   margin-top: 0.7em;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Stor skål */
@@ -635,4 +637,158 @@ font-family: 'Roboto', sans-serif;
   color: #fff;
   font-family: inherit;
   padding: 0 1em;
+}
+
+/*** PRODUKTSIDE ***/
+
+.body__product {
+  background-color: #f0f0f0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main__product {
+  padding: 0 5%;
+}
+
+.section__product {
+  background-color: #fff;
+  display: flex;
+  max-width: 65vw;
+  gap: 15%;
+}
+
+.product__gallery {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0 5% 10%;
+}
+
+.gallery__showcase {
+  display: flex;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+
+.gallery__thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.gallery__thumb {
+  max-width: 70px;
+  max-height: 77px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+}
+
+.thumb__image {
+  max-width: 40%;
+  max-height: auto;
+}
+
+.thumb__image__2 {
+  transform: rotate(90deg);
+}
+
+.thumb__image__3 {
+  transform: rotate(-45deg);
+}
+
+.product__info {
+  padding: 5% 10% 5% 0;
+}
+
+.info__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.info__title {
+  font-family: 'Overlock SC', cursive;
+}
+
+.info__size__con {
+  padding-bottom: 1em;
+}
+
+.size__con {
+  display: flex;
+  gap: 1em;
+}
+
+.product__button__con {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2em;
+}
+
+.product__pay__button {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+  border: none;
+  padding: 2% 0;
+}
+
+.info__section:nth-child(2) {
+  padding: 1em 0;
+  border-bottom: 1px solid #000;
+}
+
+.info__section:nth-child(3) {
+  padding-top: 1em;
+}
+
+.info__section:nth-child(3) img {
+  width: 25%;
+}
+
+.aside__product {
+  position: absolute;
+  right: 3em;
+}
+
+/*** CONFIRM PAGE ***/
+
+.body__order__confirm {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+}
+
+.section__confirm {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+.confirm__box__con {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.cofirm__box__title {
+  font-size: 35px;
+}
+
+.confirm__box__para:nth-child(4) {
+  padding-top: 3em;
+  text-decoration: none;
+  color: inherit;
 }
