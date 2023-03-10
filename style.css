@@ -19,6 +19,12 @@ font-family: 'Roboto', sans-serif;
   margin: 0 auto;
 }
 
+/*** MODAL ***/
+
+.modal__kurv__con {
+  border: 1px solid black;
+}
+
 /* Header */
 
 .header__con {
